@@ -1,0 +1,26 @@
+import sqlite3
+import pandas as pd
+
+# Connexion à la base de données SQLite
+conn = sqlite3.connect('../bdd/db.sqlite')
+
+# Requête SQL pour sélectionner les clients ayant passé des commandes de plus de 100 euros
+query = '''
+    SELECT C.Client_ID, C.Nom, C.Prenom, C.Email, Com.Commande_ID, Com.Montant_Commande
+    FROM Clients C
+    JOIN Commandes Com ON C.Client_ID = Com.Client_ID
+    WHERE Com.Montant_Commande > 100
+'''
+
+# Exécution de la requête et récupération des résultats dans un DataFrame pandas
+clients_commandes_df = pd.read_sql_query(query, conn)
+
+# Affichage des résultats
+if clients_commandes_df.empty:
+    print("Aucun client n'a passé de commande de plus de 100 euros.")
+else:
+    print("Clients ayant passé des commandes de plus de 100 euros :")
+    print(clients_commandes_df)
+
+# Fermeture de la connexion à la base de données
+conn.close()
