@@ -25,9 +25,6 @@ Ce projet implémente un système de gestion de clients et de commandes en utili
 6. **Affichage des clients ayant passé des commandes après le 01/01/2023** :  
    - `clients_commandes_2023.py` affiche les clients ayant passé des commandes après une date spécifique.
 
-7. **Protection des données sensibles (RGPD)** :  
-   - Mise en place de méthodes de chiffrement et pseudonymisation pour protéger les données sensibles en conformité avec le RGPD.
-   - Utilisation de bibliothèques Python telles que `cryptography` pour chiffrer les données.
 
 ## Installation
 
@@ -90,19 +87,5 @@ Pour afficher les clients ayant passé des commandes après le 01/01/2023, exéc
 python clients_commandes_2023.py
 ```
 
-### Protection des données sensibles
-
-Nous avons mis en place des solutions pour protéger les données sensibles (chiffrement, pseudonymisation) dans les scripts où c'est pertinent. Consultez les sections dans le code pour plus de détails.
-
-
 ---
 
-## Auteurs
-
-- **Sébastien** : Développeur de la solution.
-
----
-
-### Notes supplémentaires
-- Si vous souhaitez contribuer ou signaler un bug, n'hésitez pas à ouvrir une issue sur GitHub.
-- Pour toute question, contactez-moi via mon email ou sur la page de contact du repository.
