@@ -30,17 +30,8 @@ Ce projet implémente un système de gestion de clients et de commandes en utili
 
 1. **Cloner le repository** :
    ```bash
-   git clone https://github.com/votre-repo/gestion-clients-commandes.git
+   git clone https://github.com/seb54/Creation-d-une-base-de-donnees
    ```
-
-2. **Installer les dépendances** :
-   Ce projet utilise Python. Vous devez installer les bibliothèques requises en exécutant la commande suivante :
-   ```bash
-   pip install pandas sqlite3 cryptography
-   ```
-
-3. **Configuration de la base de données** :  
-   Assurez-vous que votre base de données SQLite est initialisée avec les tables `Clients` et `Commandes`. Vous pouvez trouver le script de création des tables dans le fichier `db_structure.sql`.
 
 ## Utilisation
 
