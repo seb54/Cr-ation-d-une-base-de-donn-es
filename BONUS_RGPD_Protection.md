@@ -14,7 +14,7 @@ Les **données sensibles** sont définies par le RGPD comme toute information pe
 - **Adresse** : localisation physique des personnes.
 - **Consentement Marketing** : informations sur le choix des utilisateurs de recevoir des communications commerciales.
 
-### Exemple dans notre base de données SQLite :
+### Exemple de champs dans notre base de données SQLite :
 - Nom : `Nom`
 - Prénom : `Prenom`
 - Email : `Email`
@@ -55,7 +55,7 @@ def pseudonymize(value):
 nom = "Julien Clement"
 pseudonymized_nom = pseudonymize(nom)
 print(pseudonymized_nom)
-
+```
 
 ### 3.3 Anonymisation des Données
 
@@ -67,7 +67,7 @@ Pour protéger les données sensibles, il est essentiel de limiter l'accès aux 
 
 ### 3.5 Suppression des Données (Droit à l'oubli)
 
-En vertu du **droit à l'oubli**, les utilisateurs peuvent demander la suppression complète de leurs données personnelles. Il est important de développer des mécanismes pour supprimer ou anonymiser les données à la demande.
+En vertu du **droit à l'oubli** (Article 17 du RGPD), les utilisateurs peuvent demander la suppression complète de leurs données personnelles. Il est important de développer des mécanismes pour supprimer ou anonymiser les données à la demande.
 
 ## 4. Conclusion
 
@@ -77,3 +77,4 @@ L'identification et la protection des données sensibles sont essentielles pour 
 
 - [CNIL - Le RGPD expliqué](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)
 - [Documentation sur la pseudonymisation](https://www.cnil.fr/fr/pseudonymisation)
+
