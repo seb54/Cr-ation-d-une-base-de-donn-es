@@ -38,6 +38,7 @@ cipher_suite = Fernet(key)
 # Exemple de chiffrement d'un email
 email = "julien.clement@gmail.com"
 encrypted_email = cipher_suite.encrypt(email.encode())
+```
 
 ### 3.2 Pseudonymisation des Données
 
