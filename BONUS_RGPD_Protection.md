@@ -76,5 +76,5 @@ L'identification et la protection des données sensibles sont essentielles pour 
 ### Références
 
 - [CNIL - Le RGPD expliqué](https://www.cnil.fr/fr/reglement-europeen-protection-donnees)
-- [Documentation sur la pseudonymisation](https://www.cnil.fr/fr/pseudonymisation)
+- [Documentation sur l'anonymisation'](https://www.cnil.fr/fr/technologies/lanonymisation-de-donnees-personnelles)
 
